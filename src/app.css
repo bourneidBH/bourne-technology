@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .bg-transparent { 
+    background-color: 'transparent'; 
+  }
+  .border-transparent {
+    border-color: 'transparent';
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --primary: #00aeef;
+  --primary-light: #66d5fe;
+  --primary-dark: #0185b6;
+  --neutral: #333;
+  --neutral-light: #f4f4f4;
+  --neutral-dark: #282828;
+}
+
+body {
+  background-color: var(--neutral);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+  font-family: 'Audiowide', sans-serif;
+}
