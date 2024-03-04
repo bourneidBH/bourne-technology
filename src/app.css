@@ -49,6 +49,26 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(0deg);
 }
 
+.btn, .btn-outline {
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  color: #fff;
+  font-family: 'Audiowide', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid var(--primary);
+}
+.btn {
+  background: var(--primary);
+}
+.btn-outline {
+  background: transparent;
+}
+.btn:hover, .btn-outline:hover {
+  background: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+}
+
 main p {
   margin-block-end: 1rem;
 }

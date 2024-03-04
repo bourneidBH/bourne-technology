@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   mode: 'jit',
@@ -20,6 +21,10 @@ const config: Config = {
       'white': '#fff',
       'black': '#000',
       'transparent': 'transparent',
+    },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
