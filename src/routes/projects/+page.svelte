@@ -4,6 +4,8 @@
   import type { Block } from '../../types/index'
   import shurclean from '$lib/assets/shurclean-after.jpg'
   import hikerTrailer from '$lib/assets/hiker-trailer.png'
+  import braustinPortal from '$lib/assets/portal-login-screen.jpg'
+  import progressive from '$lib/assets/progressive-edge.png'
 
   export const blocks: Block[] = [
     {
@@ -23,9 +25,30 @@
         `A custom WordPress plugin with a NextJS frontend that integrates with WooCommerce and Advanced Custom Fields (ACF) to enable complex option availability combinations and generate a user-friendly UI that allows customers to save and order custom trailers. UI available in light mode or dark mode based on user selection.`,
         `Generates dynamic PDFs for purchase orders and internal build process routing.`,
         ],
-      bodyList: ['PHP', 'WordPress', 'WooCommerce', 'ACF', 'NextJS', 'TailwindCSS', 'TypeScript', 'PDFMake'],
+      bodyList: ['PHP', 'WordPress', 'WooCommerce', 'ACF', 'React', 'Vite', 'DaisyUI', 'TypeScript', 'PDFMake'],
       imageSrc: hikerTrailer,
       imageAlt: 'Hiker Trailer custom trailer configurator'
+    },
+    {
+      title: 'Braustin Homes Internal Sales Portal',
+      bodyParagraphs: [
+        `Frontend rebuild to client supplied designs, replatform from React to NextJS to make use of Next routing. Full reusable component library built with Styled Components. Built a dynamic document service for generate sales paperwork.`,
+        `Simplifies and reduces data entry with an user-friendly interface for inputing all customer selections.`,
+        `Generates dynamic PDFs for purchase orders and autofills required government forms from Mongo database.`,
+        ],
+      bodyList: ['NextJS', 'NodeJS', 'MongoDB', 'Styled Components', 'SCSS', 'PDFLib', 'Handlebars'],
+      imageSrc: braustinPortal,
+      imageAlt: 'Braustin Homes private sales portal'
+    },
+    {
+      title: 'Progressive Edge Website',
+      bodyParagraphs: [
+        `Full website redesign and build using WordPress and Divi page builder.`,
+        ],
+      bodyList: ['WordPress', 'Divi', 'PHP', 'CSS'],
+      imageSrc: progressive,
+      imageAlt: 'Progressive Edge website',
+      projectUrl: 'https://progressive-edge.com'
     },
   ]
 </script>
