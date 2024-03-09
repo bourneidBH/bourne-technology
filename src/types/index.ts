@@ -1,6 +1,6 @@
 export interface Block {
   title: string,
-  bodyParagraph?: string,
+  bodyParagraphs?: string[],
   bodyList?: string[],
   imageSrc: string,
   imageAlt: string,

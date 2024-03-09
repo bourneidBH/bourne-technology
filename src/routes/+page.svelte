@@ -9,7 +9,7 @@
   export const blocks: Block[] = [
     {
       title: 'What I build',
-      bodyParagraph: 'I build full-stack and static websites to your design specs or I can design and build the complete site for you.',
+      bodyParagraphs: ['I build full-stack and static websites to your design specs or I can design and build the complete site for you.'],
       bodyList: [
         'Progressive web apps',
         'Headless/Static websites',
@@ -27,6 +27,8 @@
         'React',
         'NextJS',
         'JavaScript',
+        'TypeScript',
+        'NodeJS',
         'PHP',
         'WordPress',
         'GraphQL',
@@ -62,7 +64,7 @@
 {#each blocks as block, i}
   <AlternatingSection 
     title={block.title}
-    bodyParagraph={block?.bodyParagraph}
+    bodyParagraphs={block?.bodyParagraphs}
     bodyList={block?.bodyList}
     imageSrc={block.imageSrc}
     imageAlt={block.imageAlt}

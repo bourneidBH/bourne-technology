@@ -2,7 +2,7 @@
   import Border from "./Border.svelte";
   export let index: number
   export let title: string
-  export let bodyParagraph: string | undefined
+  export let bodyParagraphs: string[] | undefined
   export let bodyList: string[] | undefined
   export let imageSrc: string
   export let imageAlt: string
@@ -13,19 +13,21 @@
 
 <div class={index % 2 == 0 ? "grid grid-cols-1 place-items-center md:grid-cols-2" : "grid grid-cols-1 place-items-center md:grid-cols-2"}>
   {#if index % 2 == 0}
-    <div class="overflow-y-hidden">
-      <img src={imageSrc} class="object-cover object-top" alt={imageAlt} />
+    <div class="h-full w-full overflow-hidden">
+      <img src={imageSrc} class="w-full h-full object-cover object-left-top" alt={imageAlt} />
     </div>
   {/if}
   <div class="max-w-prose mx-auto p-6 md:p-12">
-    <h1 class="text-center text-3xl">{title}</h1>
+    <h2 class="text-center text-2xl">{title}</h2>
 
-    {#if bodyParagraph}
-      <p>{bodyParagraph}</p>
+    {#if bodyParagraphs}
+      {#each bodyParagraphs as p}
+        <p>{p}</p>
+      {/each}
     {/if}
 
     {#if bodyList}
-      <ul class="grid grid-cols-1 gap-2 mx-auto sm:grid-cols-2">
+    <ul class={`grid grid-cols-1 gap-[2px] mx-auto mb-6 ${bodyList.length > 3 ? 'sm:grid-cols-2' : ''}`}>
         {#each bodyList as item}
           <li>{item}</li>
         {/each}
@@ -41,8 +43,8 @@
     {/if}
   </div>
   {#if index % 2 !== 0}
-    <div class="overflow-y-hidden">
-      <img src={imageSrc} class="object-cover object-top" alt={imageAlt} />
+    <div class="h-full w-full overflow-hidden">
+      <img src={imageSrc} class="w-full h-full object-cover object-left-top" alt={imageAlt} />
     </div>
   {/if}
 </div>

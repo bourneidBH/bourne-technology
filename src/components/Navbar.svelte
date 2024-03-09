@@ -39,7 +39,7 @@
   }
 </script>
 
-<div class="fixed top-0 w-full flex items-center justify-between bg-neutral-dark p-2 border-b-2 border-primary">
+<div class="fixed top-0 z-40 w-full flex items-center justify-between bg-neutral-dark p-2 border-b-2 border-primary">
   <a href="/" aria-label="Bourne Technology home page">
     <img src={logo} alt="Bourne Technology logo" width="200px" height="33px" />
   </a>
@@ -48,7 +48,7 @@
   </button>
 </div>
 
-<nav  use:clickOutside on:click_outside={closeNav} class:open={open} class="transition ease-in-out hidden w-0 h-0 fixed top-0 right-0 p-4 bg-neutral-dark [&.open]:block [&.open]:w-full [&.open]:h-full [&.open]:md:w-[300px] [&.open]:md:shadow-[-3px_0_5px_rgba(0,0,0,0.7)]">
+<nav  use:clickOutside on:click_outside={closeNav} class:open={open} class="transition-[width] transition-700 hidden z-50 w-0 h-0 fixed top-0 right-0 p-4 bg-neutral-dark [&.open]:block [&.open]:w-full [&.open]:h-full [&.open]:md:w-[300px] [&.open]:md:shadow-[-3px_0_5px_rgba(0,0,0,0.7)]">
   <ul class="w-full grid grid-cols-1">
     <button class="text-primary font-bold text-2xl justify-self-end hover:text-white"  on:click={toggleOpen}>&khcy;</button>
 
