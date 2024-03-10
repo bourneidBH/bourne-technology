@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn, .btn-outline {
   padding: 0.5rem 1rem;
-  margin: 2rem 0;
+  margin: 2rem 1rem 2rem 0;
   color: #fff;
   font-family: 'Audiowide', sans-serif;
   text-transform: uppercase;
@@ -71,4 +71,12 @@ h1, h2, h3, h4, h5, h6 {
 
 main p {
   margin-block-end: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 980px) {
+  .btn, .btn-outline {
+    display:block;
+    width: max-content;
+  }
 }

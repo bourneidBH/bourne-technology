@@ -50,6 +50,27 @@
       imageAlt: 'Progressive Edge website',
       projectUrl: 'https://progressive-edge.com'
     },
+    {
+      title: 'Hogebuilt Fender Kit Builder',
+      bodyParagraphs: [
+        `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection.`,
+        ],
+      bodyList: ['WordPress', 'WooCommerce', 'ACF', 'PHP', 'CSS'],
+      imageSrc: progressive,
+      imageAlt: 'Hogebuilt semi trailer custom fender kit builder',
+      projectUrl: 'https://www.hogebuilt.com/product-category/half-tandem-fenders/custom-mounting-options-half-tandem-fenders/'
+    },
+    {
+      title: `Bourne's Ropeworks`,
+      bodyParagraphs: [
+        `Design and build of a simple responsive HTML website to showcase client rope splicing service.`,
+        ],
+      bodyList: ['HTML', 'CSS', 'PHP'],
+      imageSrc: braustinPortal,
+      imageAlt: `Bourne's Ropeworks website`,
+      projectUrl: `https://bournesropeworks.com/`,
+      codeUrl: `https://github.com/bourneidBH/bournes-ropeworks`, 
+    },
   ]
 </script>
 

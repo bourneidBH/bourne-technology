@@ -11,7 +11,7 @@
 
 </script>
 
-<div class={index % 2 == 0 ? "grid grid-cols-1 place-items-center md:grid-cols-2" : "grid grid-cols-1 place-items-center md:grid-cols-2"}>
+<div class={index % 2 == 0 ? "grid grid-cols-1 place-items-center md:grid-cols-2" : "flex flex-col-reverse place-items-center md:grid md:grid-cols-2"}>
   {#if index % 2 == 0}
     <div class="h-full w-full overflow-hidden">
       <img src={imageSrc} class="w-full h-full object-cover object-left-top" alt={imageAlt} />

@@ -43,6 +43,7 @@
   <a href="/" aria-label="Bourne Technology home page">
     <img src={logo} alt="Bourne Technology logo" width="200px" height="33px" />
   </a>
+  <div class="hidden text-center font-bold uppercase md:block">Web Development Services</div>
   <button class="p-2 text-primary text-2xl scale-x-150 hover:text-white" on:click={toggleOpen}>
     &equiv;
   </button>
