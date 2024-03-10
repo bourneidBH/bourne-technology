@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 2px solid var(--primary);
+  width: max-content;
 }
 .btn {
   background: var(--primary);
@@ -73,10 +74,23 @@ main p {
   margin-block-end: 1rem;
 }
 
+input, textarea {
+  border: 2px solid var(--primary);
+  outline: none !important;
+  padding: 4px;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  border: 2px solid #fff;
+}
+
 /* Media Queries */
 @media (max-width: 980px) {
   .btn, .btn-outline {
     display:block;
-    width: max-content;
   }
 }
