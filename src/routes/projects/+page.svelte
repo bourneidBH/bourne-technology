@@ -2,10 +2,12 @@
   import AlternatingSection from '../../components/AlternatingSection.svelte'
   import Border from '../../components/Border.svelte';
   import type { Block } from '../../types/index'
-  import shurclean from '$lib/assets/shurclean-after.jpg'
+  import shurclean from '$lib/assets/shurclean_after.png'
   import hikerTrailer from '$lib/assets/hiker-trailer.png'
   import braustinPortal from '$lib/assets/portal-login-screen.jpg'
   import progressive from '$lib/assets/progressive-edge.png'
+  import ropeworks from '$lib/assets/bournes-ropeworks.png'
+  import hogebuilt from '$lib/assets/hogebuilt.png'
 
   export const blocks: Block[] = [
     {
@@ -56,7 +58,7 @@
         `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection.`,
         ],
       bodyList: ['WordPress', 'WooCommerce', 'ACF', 'PHP', 'CSS'],
-      imageSrc: progressive,
+      imageSrc: hogebuilt,
       imageAlt: 'Hogebuilt semi trailer custom fender kit builder',
       projectUrl: 'https://www.hogebuilt.com/product-category/half-tandem-fenders/custom-mounting-options-half-tandem-fenders/'
     },
@@ -66,7 +68,7 @@
         `Design and build of a simple responsive HTML website to showcase client rope splicing service.`,
         ],
       bodyList: ['HTML', 'CSS', 'PHP'],
-      imageSrc: braustinPortal,
+      imageSrc: ropeworks,
       imageAlt: `Bourne's Ropeworks website`,
       projectUrl: `https://bournesropeworks.com/`,
       codeUrl: `https://github.com/bourneidBH/bournes-ropeworks`, 
