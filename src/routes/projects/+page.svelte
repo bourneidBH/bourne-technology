@@ -62,17 +62,17 @@
       imageAlt: 'Hogebuilt semi trailer custom fender kit builder',
       projectUrl: 'https://www.hogebuilt.com/product-category/half-tandem-fenders/custom-mounting-options-half-tandem-fenders/'
     },
-    {
-      title: `Bourne's Ropeworks`,
-      bodyParagraphs: [
-        `Design and build of a simple responsive HTML website to showcase client rope splicing service.`,
-        ],
-      bodyList: ['HTML', 'CSS', 'PHP'],
-      imageSrc: ropeworks,
-      imageAlt: `Bourne's Ropeworks website`,
-      projectUrl: `https://bournesropeworks.com/`,
-      codeUrl: `https://github.com/bourneidBH/bournes-ropeworks`, 
-    },
+    // {
+    //   title: `Bourne's Ropeworks`,
+    //   bodyParagraphs: [
+    //     `Design and build of a simple responsive HTML website to showcase client rope splicing service.`,
+    //     ],
+    //   bodyList: ['HTML', 'CSS', 'PHP'],
+    //   imageSrc: ropeworks,
+    //   imageAlt: `Bourne's Ropeworks website`,
+    //   projectUrl: `https://bournesropeworks.com/`,
+    //   codeUrl: `https://github.com/bourneidBH/bournes-ropeworks`, 
+    // },
   ]
 </script>
 

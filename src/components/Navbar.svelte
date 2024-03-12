@@ -1,13 +1,8 @@
 <script lang="ts">
-    import { onNavigate } from '$app/navigation';
+  import { onNavigate } from '$app/navigation';
   import { page } from '$app/stores';
   import logo from '$lib/assets/bourne-technology-logo_white.svg'
-  import type { MaybePromise } from '@sveltejs/kit';
 
-  type Callback = (
-		navigation: import('@sveltejs/kit').OnNavigate
-	) => MaybePromise<(() => void) | void>
-  
   const routes = [
     {href: '/', name: 'About'},
     {href: '/projects', name: 'Projects'},
@@ -45,7 +40,7 @@
   }
 
   onNavigate(() => {
-    open = false
+    closeNav()
   })
   
 </script>
@@ -60,7 +55,7 @@
   </button>
 </div>
 
-<nav  use:clickOutside on:click_outside={closeNav} class:open={open} class="transition-[width] transition-700 hidden z-50 w-0 h-0 fixed top-0 right-0 p-4 bg-neutral-dark [&.open]:block [&.open]:w-full [&.open]:h-full [&.open]:md:w-[300px] [&.open]:md:shadow-[-3px_0_5px_rgba(0,0,0,0.7)]">
+<nav use:clickOutside on:click_outside={closeNav} class:open={open} class="transition-[width] transition-700 hidden z-50 w-0 h-0 fixed top-0 right-0 p-4 bg-neutral-dark [&.open]:block [&.open]:w-full [&.open]:h-full [&.open]:md:w-[300px] [&.open]:md:shadow-[-3px_0_5px_rgba(0,0,0,0.7)]">
   <ul class="w-full grid grid-cols-1">
     <button class="text-primary font-bold text-2xl justify-self-end hover:text-white"  on:click={toggleOpen}>&khcy;</button>
 
