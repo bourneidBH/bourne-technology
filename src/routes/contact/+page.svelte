@@ -2,6 +2,10 @@
   import Border from "../../components/Border.svelte";
 </script>
 
+<svelte:head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</svelte:head>
+
 <h1 class="text-center text-3xl my-6">Contact Me</h1>
 <p class="max-w-prose mx-auto text-center">Need some website help? I'd love to hear about your project. Let's build something!</p>
 <Border direction="left" />
@@ -30,6 +34,7 @@
     <label for="message">Tell me about your project</label>
     <textarea name="message" id="message" rows="3"></textarea>
   </div>
+  <div class="g-recaptcha" data-sitekey="6Ledy5YpAAAAAPimseP3lfEHdKq2BM5VDFYAjlIO"></div>
   <button type="submit" class="btn">Send</button>
 </form>
 <Border direction="right" />
