@@ -32,6 +32,26 @@
       imageAlt: 'Hiker Trailer custom trailer configurator'
     },
     {
+      title: 'Hogebuilt Fender Kit Builder',
+      bodyParagraphs: [
+        `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection.`,
+      ],
+      bodyList: ['WordPress', 'WooCommerce', 'ACF', 'PHP', 'CSS'],
+      imageSrc: hogebuilt,
+      imageAlt: 'Hogebuilt semi trailer custom fender kit builder',
+      projectUrl: 'https://www.hogebuilt.com/product-category/half-tandem-fenders/custom-mounting-options-half-tandem-fenders/'
+    },
+    {
+      title: 'Progressive Edge Website',
+      bodyParagraphs: [
+        `Full website redesign and build using WordPress and Divi page builder.`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'PHP', 'CSS'],
+      imageSrc: progressive,
+      imageAlt: 'Progressive Edge website',
+      projectUrl: 'https://progressive-edge.com'
+    },
+    {
       title: 'Braustin Homes Internal Sales Portal',
       bodyParagraphs: [
         `Frontend rebuild to client supplied designs, replatform from React to NextJS to make use of Next routing. Full reusable component library built with Styled Components. Built a dynamic document service for generate sales paperwork.`,
@@ -41,26 +61,6 @@
       bodyList: ['NextJS', 'NodeJS', 'MongoDB', 'Styled Components', 'SCSS', 'PDFLib', 'Handlebars'],
       imageSrc: braustinPortal,
       imageAlt: 'Braustin Homes private sales portal'
-    },
-    {
-      title: 'Progressive Edge Website',
-      bodyParagraphs: [
-        `Full website redesign and build using WordPress and Divi page builder.`,
-        ],
-      bodyList: ['WordPress', 'Divi', 'PHP', 'CSS'],
-      imageSrc: progressive,
-      imageAlt: 'Progressive Edge website',
-      projectUrl: 'https://progressive-edge.com'
-    },
-    {
-      title: 'Hogebuilt Fender Kit Builder',
-      bodyParagraphs: [
-        `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection.`,
-        ],
-      bodyList: ['WordPress', 'WooCommerce', 'ACF', 'PHP', 'CSS'],
-      imageSrc: hogebuilt,
-      imageAlt: 'Hogebuilt semi trailer custom fender kit builder',
-      projectUrl: 'https://www.hogebuilt.com/product-category/half-tandem-fenders/custom-mounting-options-half-tandem-fenders/'
     },
     // {
     //   title: `Bourne's Ropeworks`,
