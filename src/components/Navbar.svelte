@@ -1,6 +1,12 @@
 <script lang="ts">
+    import { onNavigate } from '$app/navigation';
   import { page } from '$app/stores';
   import logo from '$lib/assets/bourne-technology-logo_white.svg'
+  import type { MaybePromise } from '@sveltejs/kit';
+
+  type Callback = (
+		navigation: import('@sveltejs/kit').OnNavigate
+	) => MaybePromise<(() => void) | void>
   
   const routes = [
     {href: '/', name: 'About'},
@@ -37,6 +43,11 @@
   function closeNav() {
     open = false;
   }
+
+  onNavigate(() => {
+    open = false
+  })
+  
 </script>
 
 <div class="fixed top-0 z-40 w-full flex items-center justify-between bg-neutral-dark p-2 border-b-2 border-primary">
