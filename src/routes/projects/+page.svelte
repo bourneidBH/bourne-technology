@@ -13,8 +13,9 @@
     {
       title: 'ShurClean Website',
       bodyParagraphs: [
-        `Full visual redesign and rebuild of a non-responsive static PHP site. New mobile responsive site built in NextJS with TypeScript and Tailwind CSS.`, 
+        `Full visual redesign and rebuild of a non-responsive PHP site. New mobile responsive site built in NextJS with TypeScript and Tailwind CSS.`, 
         `Dynamic pages are generated from MarkDown files to simplify making content edits.`,
+        `Built in partnership with Smart Interactive Media.`,
       ],
       bodyList: ['NextJS', 'TypeScript', 'TailwindCSS'],
       imageSrc: shurclean,
@@ -26,6 +27,7 @@
       bodyParagraphs: [
         `A custom WordPress plugin with a NextJS frontend that integrates with WooCommerce and Advanced Custom Fields (ACF) to enable complex option availability combinations and generate a user-friendly UI that allows customers to save and order custom trailers. UI available in light mode or dark mode based on user selection.`,
         `Generates dynamic PDFs for purchase orders and internal build process routing.`,
+        `Built in partnership with Smart Interactive Media.`,
         ],
       bodyList: ['PHP', 'WordPress', 'WooCommerce', 'ACF', 'React', 'Vite', 'DaisyUI', 'TypeScript', 'PDFMake'],
       imageSrc: hikerTrailer,
@@ -34,7 +36,7 @@
     {
       title: 'Hogebuilt Fender Kit Builder',
       bodyParagraphs: [
-        `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection.`,
+        `A custom WordPress plugin with a simple UI to determine which aftermarket fender components fit a semi trailer based on trailer specifications. Integrates with WordPress, WooCommerce and ACF filter possible options based on each previous selection. Built in partnership with Smart Interactive Media.`,
       ],
       bodyList: ['WordPress', 'WooCommerce', 'ACF', 'PHP', 'CSS'],
       imageSrc: hogebuilt,
@@ -44,7 +46,7 @@
     {
       title: 'Progressive Edge Website',
       bodyParagraphs: [
-        `Full website redesign and build using WordPress and Divi page builder.`,
+        `Full website redesign and build using WordPress and Divi page builder. Built in partnership with Smart Interactive Media.`,
       ],
       bodyList: ['WordPress', 'Divi', 'PHP', 'CSS'],
       imageSrc: progressive,
