@@ -1,12 +1,13 @@
 <script lang="ts">
   import { onNavigate } from '$app/navigation';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
   import logo from '$lib/assets/bourne-technology-logo_white.svg'
 
   const routes = [
-    {href: '/', name: 'About'},
-    {href: '/projects', name: 'Projects'},
-    {href: '/contact', name: 'Contact'},
+    {href: `${base}/`, name: 'About'},
+    {href: `${base}/projects`, name: 'Projects'},
+    {href: `${base}/contact`, name: 'Contact'},
   ]
 
   let open = false
