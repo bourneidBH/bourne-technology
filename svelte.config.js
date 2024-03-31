@@ -22,7 +22,7 @@ const config = {
 			pages: 'docs',
 		}),
 		paths: {
-			base: dev ? "" : "/bourne-technology",
+			base: dev ? "" : "", //for gh-pages without custom domain use "/repo-name"
 		}
 	}
 };
