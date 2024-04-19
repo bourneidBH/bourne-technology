@@ -31,7 +31,8 @@
         ],
       bodyList: ['PHP', 'WordPress', 'WooCommerce', 'ACF', 'React', 'Vite', 'DaisyUI', 'TypeScript', 'PDFMake'],
       imageSrc: hikerTrailer,
-      imageAlt: 'Hiker Trailer custom trailer configurator'
+      imageAlt: 'Hiker Trailer custom trailer configurator',
+      projectUrl: 'https://hikertrailers.com/hikertrailer-configurator/',
     },
     {
       title: 'Hogebuilt Fender Kit Builder',
