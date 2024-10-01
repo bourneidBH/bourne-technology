@@ -8,8 +8,21 @@
   import progressive from '$lib/assets/progressive-edge.png'
   import ropeworks from '$lib/assets/bournes-ropeworks.png'
   import hogebuilt from '$lib/assets/hogebuilt.png'
+  import willman from '$lib/assets/willman_after.png'
+  import spn from '$lib/assets/snowplow-news_after.png'
 
   export const blocks: Block[] = [
+    {
+      title: 'Willman Industries Website',
+      bodyParagraphs: [
+        `Redesign of a WordPress site, changing to a modern theme compatible with current versions of WordPress and PHP.`,
+        `Built in partnership with Smart Interactive Media.`,
+      ],
+      bodyList: ['WordPress', 'Divi'],
+      imageSrc: willman,
+      imageAlt: 'Willman Industries website redesign and build',
+      projectUrl: 'https://willmanind.com',
+    },
     {
       title: 'ShurClean Website',
       bodyParagraphs: [
@@ -33,6 +46,17 @@
       imageSrc: hikerTrailer,
       imageAlt: 'Hiker Trailer custom trailer configurator',
       projectUrl: 'https://hikertrailers.com/hikertrailer-configurator/',
+    },
+    {
+      title: 'Snow Plow News Website Customizations',
+      bodyParagraphs: [
+        `A variety of custom functionality integrated with a WordPress site. A custom blog module allows advertising to be inserted in the post archives. Custom search and filter tools for dealers, suppliers, and snowplow comparisons.`,
+        `Built in partnership with Smart Interactive Media.`,
+        ],
+      bodyList: ['PHP', 'WordPress', 'Divi', 'ACF', 'CSS', 'JavaScript'],
+      imageSrc: spn,
+      imageAlt: 'Snow Plow News website customizations',
+      projectUrl: 'https://snowplownews.com/',
     },
     {
       title: 'Hogebuilt Fender Kit Builder',
