@@ -10,8 +10,20 @@
   import hogebuilt from '$lib/assets/hogebuilt.png'
   import willman from '$lib/assets/willman_after.png'
   import spn from '$lib/assets/snowplow-news_after.png'
+  import bloapco from '$lib/assets/bloapco-after2.png'
 
   export const blocks: Block[] = [
+    {
+      title: 'BloApCo Website',
+      bodyParagraphs: [
+        `Complete website redesign and rebuild, moving to a headless NextJS site with WordPress backend for content. NextJS frontend layouts are populated via GraphQL queries.`,
+        `Built in partnership with Smart Interactive Media.`,
+      ],
+      bodyList: ['WordPress', 'ACF', 'NextJS', 'React', 'GraphQL', 'TailwindCSS', 'TypeScript'],
+      imageSrc: bloapco,
+      imageAlt: 'BloApCo website redesign and build',
+      projectUrl: 'https://www.bloapco.com',
+    },
     {
       title: 'Willman Industries Website',
       bodyParagraphs: [
