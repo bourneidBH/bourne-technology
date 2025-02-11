@@ -6,8 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"add-domain": "echo \"bourne-technology.com\" > build/CNAME",
-		"deploy": "npm build && add-domain && npx gh-pages -d build -t true",
+		"deploy": "npm build && npx gh-pages -d build -t true",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
