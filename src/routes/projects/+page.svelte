@@ -11,8 +11,44 @@
   import willman from '$lib/assets/willman_after.png'
   import spn from '$lib/assets/snowplow-news_after.png'
   import bloapco from '$lib/assets/bloapco-after2.png'
+  import kbContractors from '$lib/assets/kb-contractors.png'
+  import argo from '$lib/assets/argo-after.png'
+  import swaphogg from '$lib/assets/swaphogg.png'
 
   export const blocks: Block[] = [
+    {
+      title: 'SwapHogg Website',
+      bodyParagraphs: [
+        `New WordPress website including design, build and content creation. Integrates with existing MetaLocator dealer locator.`,
+        `Built in partnership with Smart Interactive Media`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'WooCommerce', 'PHP'],
+      imageSrc: swaphogg,
+      imageAlt: 'Argo Industries redesign and build',
+      projectUrl: 'https://swaphogg.com/',
+    },
+    {
+      title: 'Argo Industries Website',
+      bodyParagraphs: [
+        `Complete website redesign and rebuild to better align with marketing goals.`,
+        `Built in partnership with Chameleon Communications`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'PHP'],
+      imageSrc: argo,
+      imageAlt: 'Argo Industries redesign and build',
+      projectUrl: 'https://argoind.com/',
+    },
+    {
+      title: 'KB Contractors Website',
+      bodyParagraphs: [
+        `Complete website redesign and replatform from SquareSpace to WordPress. Includes a custom Project post type for the project gallery.`,
+        `Built in partnership with InContext, Inc.`,
+      ],
+      bodyList: ['WordPress', 'Beaver Builder', ],
+      imageSrc: kbContractors,
+      imageAlt: 'KB Contractors redesign and build',
+      projectUrl: 'https://kbcontractors.com/',
+    },
     {
       title: 'BloApCo Website',
       bodyParagraphs: [
