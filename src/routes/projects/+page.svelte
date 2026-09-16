@@ -14,8 +14,44 @@
   import kbContractors from '$lib/assets/kb-contractors.png'
   import argo from '$lib/assets/argo-after.png'
   import swaphogg from '$lib/assets/swaphogg.png'
+  import qlc from '$lib/assets/qlc-labeling-after.jpg'
+  import sitetote from '$lib/assets/sitetote.jpg'
+  import natesSnow from '$lib/assets/nates-snow.jpg'
 
   export const blocks: Block[] = [
+    {
+      title: 'Nate\'s Snow & Ice Website',
+      bodyParagraphs: [
+        `New WordPress website build to match provided design specifications.`,
+        `Built in partnership with Smart Interactive Media`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'PHP',],
+      imageSrc: natesSnow,
+      imageAlt: 'Nate\'s Snow & Ice website build',
+      projectUrl: 'https://natessnow.com/',
+    },
+    {
+      title: 'SiteTote Website',
+      bodyParagraphs: [
+        `New WordPress website including design, build and content creation.`,
+        `Built in partnership with Smart Interactive Media`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'PHP',],
+      imageSrc: sitetote,
+      imageAlt: 'SiteTote website build',
+      projectUrl: 'https://sitetote.com/',
+    },
+    {
+      title: 'QLC Labeling Website',
+      bodyParagraphs: [
+        `Complete website redesign and rebuild for improved usability, organization, and searchable product offering. Custom MegaMenu.`,
+        `Built in partnership with Smart Interactive Media`,
+      ],
+      bodyList: ['WordPress', 'Divi', 'WooCommerce', 'ACF', 'PHP', 'JavaScript', 'CSS'],
+      imageSrc: qlc,
+      imageAlt: 'QLC Labeling redesign and build',
+      projectUrl: 'https://www.qlc-labeling.com/',
+    },
     {
       title: 'SwapHogg Website',
       bodyParagraphs: [
@@ -49,17 +85,17 @@
       imageAlt: 'KB Contractors redesign and build',
       projectUrl: 'https://kbcontractors.com/',
     },
-    {
-      title: 'BloApCo Website',
-      bodyParagraphs: [
-        `Complete website redesign and rebuild, moving to a headless NextJS site with WordPress backend for content. NextJS frontend layouts are populated via GraphQL queries.`,
-        `Built in partnership with Smart Interactive Media.`,
-      ],
-      bodyList: ['WordPress', 'ACF', 'NextJS', 'React', 'GraphQL', 'TailwindCSS', 'TypeScript'],
-      imageSrc: bloapco,
-      imageAlt: 'BloApCo website redesign and build',
-      projectUrl: 'https://www.bloapco.com',
-    },
+    // {
+    //   title: 'BloApCo Website',
+    //   bodyParagraphs: [
+    //     `Complete website redesign and rebuild, moving to a headless NextJS site with WordPress backend for content. NextJS frontend layouts are populated via GraphQL queries.`,
+    //     `Built in partnership with Smart Interactive Media.`,
+    //   ],
+    //   bodyList: ['WordPress', 'ACF', 'NextJS', 'React', 'GraphQL', 'TailwindCSS', 'TypeScript'],
+    //   imageSrc: bloapco,
+    //   imageAlt: 'BloApCo website redesign and build',
+    //   projectUrl: 'https://www.bloapco.com',
+    // },
     {
       title: 'Willman Industries Website',
       bodyParagraphs: [
