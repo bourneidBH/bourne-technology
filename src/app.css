@@ -1,33 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer components {
-  .bg-transparent { 
-    background-color: 'transparent'; 
-  }
-  .border-transparent {
-    border-color: 'transparent';
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+layer(base);
+@import 'tailwindcss';
+
+@config '../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
 }
 
-:root {
-  --primary: #00aeef;
-  --primary-light: #66d5fe;
-  --primary-dark: #0185b6;
-  --neutral: #333;
-  --neutral-light: #f4f4f4;
-  --neutral-dark: #282828;
+@utility bg-transparent {
+  background-color: 'transparent';
+}
+
+@utility border-transparent {
+  border-color: 'transparent';
+}
+
+@theme {
+  --color-primary: #00aeef;
+  --color-primary-light: #66d5fe;
+  --color-primary-dark: #0185b6;
+  --color-neutral: #333;
+  --color-neutral-light: #f4f4f4;
+  --color-neutral-dark: #282828;
 }
 
 body {
-  background-color: var(--neutral);
+  background-color: var(--color-neutral);
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary);
+  color: var(--color-primary);
   font-family: 'Audiowide', sans-serif;
 }
 
@@ -36,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 0px;
   border-style: solid;
   border-width: 16px 0 0 16px;
-  border-color: transparent transparent transparent var(--primary);
+  border-color: transparent transparent transparent var(--color-primary);
   transform: rotate(0deg);
 }
 
@@ -45,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 0px;
   border-style: solid;
   border-width: 0 0 16px 16px;
-  border-color: transparent transparent var(--primary) transparent;
+  border-color: transparent transparent var(--color-primary) transparent;
   transform: rotate(0deg);
 }
 
@@ -56,18 +75,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Audiowide', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--color-primary);
   width: max-content;
 }
 .btn {
-  background: var(--primary);
+  background: var(--color-primary);
 }
 .btn-outline {
   background: transparent;
 }
 .btn:hover, .btn-outline:hover {
-  background: var(--primary-dark);
-  border: 2px solid var(--primary-dark);
+  background: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
 }
 
 main p {
@@ -75,7 +94,7 @@ main p {
 }
 
 input, textarea {
-  border: 2px solid var(--primary);
+  border: 2px solid var(--color-primary);
   outline: none !important;
   padding: 4px;
   width: 100%;

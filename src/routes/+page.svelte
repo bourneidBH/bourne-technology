@@ -2,9 +2,9 @@
   import type { Block } from '../types';
   import Border from '../components/Border.svelte';
   import AlternatingSection from '../components/AlternatingSection.svelte';
-  import profile from '$lib/assets/t-bucket.jpg';
-  import shurclean from '$lib/assets/shurclean_after.png'
-  import portal from '$lib/assets/portal-login-screen.jpg'
+  import profile from '#lib/assets/t-bucket.jpg';
+  import shurclean from '#lib/assets/shurclean_after.png'
+  import portal from '#lib/assets/portal-login-screen.jpg'
 
   export const blocks: Block[] = [
     {

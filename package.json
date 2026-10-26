@@ -15,15 +15,20 @@
 		"@sveltejs/adapter-static": "^4.0.0",
 		"@sveltejs/kit": "^3.0.0",
 		"@sveltejs/vite-plugin-svelte": "^7.0.0",
-		"autoprefixer": "^10.4.16",
-		"gh-pages": "^6.1.1",
+		"@tailwindcss/postcss": "^4.3.3",
+		"autoprefixer": "^10.6.1",
+		"gh-pages": "^6.3.0",
 		"postcss": "^8.4.32",
 		"svelte": "^5.57.1",
 		"svelte-check": "^4.7.5",
-		"tailwindcss": "^3.4.0",
-		"tslib": "^2.4.1",
+		"tailwindcss": "^4.3.3",
+		"tslib": "^2.8.1",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.12"
 	},
-	"type": "module"
+	"type": "module",
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
+	}
 }
