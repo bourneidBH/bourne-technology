@@ -1,7 +1,19 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import adapter from "@sveltejs/adapter-static";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-	base: "/bourne-technology/",
-	plugins: [sveltekit()]
+	plugins: [
+		sveltekit({
+			preprocess: vitePreprocess(),
+			adapter: adapter({
+				fallback: "index.html",
+				pages: "docs"
+			}),
+			paths: {
+				base: ""
+			}
+		})
+	]
 });
