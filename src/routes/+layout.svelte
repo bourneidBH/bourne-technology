@@ -1,13 +1,13 @@
 <script>
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import '../app.css'
   import Navbar from '../components/Navbar.svelte';
   import Footer from '../components/Footer.svelte';
 </script>
 
 <svelte:head>
-  <title>{`${$page.data.title} - Bourne Technology LLC`}</title>
-  <meta name="description" content={$page.data.description} />
+  <title>{`${page.data.title} - Bourne Technology LLC`}</title>
+  <meta name="description" content={page.data.description} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />

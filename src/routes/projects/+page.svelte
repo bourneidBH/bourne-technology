@@ -2,34 +2,24 @@
   import AlternatingSection from "../../components/AlternatingSection.svelte";
   import Border from "../../components/Border.svelte";
   import type { Block } from "../../types/index";
-  import shurclean from "$lib/assets/shurclean_after.png";
-  import hikerTrailer from "$lib/assets/hiker-trailer.png";
-  import braustinPortal from "$lib/assets/portal-login-screen.jpg";
-  import progressive from "$lib/assets/progressive-edge.png";
-  import ropeworks from "$lib/assets/bournes-ropeworks.png";
-  import hogebuilt from "$lib/assets/hogebuilt.png";
-  import willman from "$lib/assets/willman_after.png";
-  import spn from "$lib/assets/snowplow-news_after.png";
-  import bloapco from "$lib/assets/bloapco-after2.png";
-  import kbContractors from "$lib/assets/kb-contractors.png";
-  import argo from "$lib/assets/argo-after.png";
-  import swaphogg from "$lib/assets/swaphogg.png";
-  import qlc from "$lib/assets/qlc-labeling-after.jpg";
-  import sitetote from "$lib/assets/sitetote.jpg";
-  import natesSnow from "$lib/assets/nates-snow.jpg";
-  import braustin from "$lib/assets/braustin.png";
+  import shurclean from "#lib/assets/shurclean_after.png";
+  import hikerTrailer from "#lib/assets/hiker-trailer.png";
+  import braustinPortal from "#lib/assets/portal-login-screen.jpg";
+  import progressive from "#lib/assets/progressive-edge.png";
+  import ropeworks from "#lib/assets/bournes-ropeworks.png";
+  import hogebuilt from "#lib/assets/hogebuilt.png";
+  import willman from "#lib/assets/willman_after.png";
+  import spn from "#lib/assets/snowplow-news_after.png";
+  import bloapco from "#lib/assets/bloapco-after2.png";
+  import kbContractors from "#lib/assets/kb-contractors.png";
+  import argo from "#lib/assets/argo-after.png";
+  import swaphogg from "#lib/assets/swaphogg.png";
+  import qlc from "#lib/assets/qlc-labeling-after.jpg";
+  import sitetote from "#lib/assets/sitetote.jpg";
+  import natesSnow from "#lib/assets/nates-snow.jpg";
+  import braustin from "#lib/assets/braustin.png";
 
   export const blocks: Block[] = [
-    {
-      title: "Bourne's Ropeworks Website",
-      bodyParagraphs: [
-        `Full site design and development including artwork, photography and content creation. Custom photo gallery with lightbox slider functionality.`,
-      ],
-      bodyList: ["NextJS", "TailwindCSS", "TypeScript"],
-      imageSrc: ropeworks,
-      imageAlt: "Bourne's Ropeworks website build",
-      projectUrl: "https://bournesropeworks.com/",
-    },
     {
       title: "Nate's Snow & Ice Website",
       bodyParagraphs: [
@@ -40,6 +30,16 @@
       imageSrc: natesSnow,
       imageAlt: "Nate's Snow & Ice website build",
       projectUrl: "https://natessnow.com/",
+    },
+    {
+      title: "Bourne's Ropeworks Website",
+      bodyParagraphs: [
+        `Full site design and development including artwork, photography and content creation. Custom photo gallery with lightbox slider functionality.`,
+      ],
+      bodyList: ["NextJS", "TailwindCSS", "TypeScript"],
+      imageSrc: ropeworks,
+      imageAlt: "Bourne's Ropeworks website build",
+      projectUrl: "https://bournesropeworks.com/",
     },
     {
       title: "SiteTote Website",
@@ -168,7 +168,7 @@
       ],
       imageSrc: hikerTrailer,
       imageAlt: "Hiker Trailer custom trailer configurator",
-      projectUrl: "https://hikertrailers.com/hikertrailer-configurator/",
+      projectUrl: "https://hikerdemo.wpenginepowered.com/hikertrailer-configurator/builder/-99/trailer_model_and_size",
     },
     {
       title: "Snow Plow News Website Customizations",
