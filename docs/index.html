@@ -4,27 +4,34 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="/_app/immutable/entry/start.8rd1MWtn.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/2GMSy-u4.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CP3TQ-iO.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CdAuxy6-.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CAcuCqK5.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.Dwo1Tfue.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.BQzi_qZa.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BLAwtICg.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/E-7t7pe6.js" rel="modulepreload">
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.0UgitOMH.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/entry.papW5BNL.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.VRdwkSQF.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.bLwTfzDF.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index.-KqIrdNJ.js">
+		<link href="/_app/immutable/assets/0.DGrTG180.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div id="svelte" style="display: contents">
 			<script>
 				{
-					__sveltekit_1iaa8wu = {
-						base: ""
+					__sveltekit_19d97ug = {
+						base: "",
+						version: "1793043160265"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("/_app/immutable/entry/start.0UgitOMH.js"),
-						import("/_app/immutable/entry/app.bLwTfzDF.js")
-					]).then(([kit, app]) => {
+					import("/_app/immutable/entry/start.8rd1MWtn.js").then(async (kit) => {
+						kit.init(__sveltekit_19d97ug);
+						const app = await import("/_app/immutable/entry/app.Dwo1Tfue.js");
 						kit.start(app, element);
 					});
 				}
